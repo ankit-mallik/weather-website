@@ -11,7 +11,7 @@ const forecast = (lat, lon, callback) => {
       const arr = body.data[0];
       callback(
         undefined,
-        `On ${arr.city_name} it is currently ${arr.temp}℃  and sky is ${arr.weather.description}`
+        `On ${arr.city_name} it is currently ${arr.temp}℃  and sky is ${arr.weather.description},The sunrises on ${arr.sunrise} and sets on ${arr.sunset}`
       );
     }
   });
